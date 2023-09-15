@@ -8,14 +8,14 @@
 	height: 200px;
 }
 
-.f--wrap {
+/*.f--wrap {
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
 	background-color: #f8f9fa;
-}
+}*/
 
 .banner--img {
 	background-image: url(https://picsum.photos/600);
