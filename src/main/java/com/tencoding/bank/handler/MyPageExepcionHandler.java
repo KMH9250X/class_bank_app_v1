@@ -1,5 +1,6 @@
 package com.tencoding.bank.handler;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -12,6 +13,7 @@ import com.tencoding.bank.handler.exception.CustomPageException;
  * 객체를 반환하도록 설계할 때 사용 
  * 예외 page를 리턴하도록 설계 
  */
+@Order(2)
 @RestControllerAdvice // IoC 대상
 public class MyPageExepcionHandler {
 

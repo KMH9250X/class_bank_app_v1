@@ -1,5 +1,6 @@
 package com.tencoding.bank.handler;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -9,7 +10,7 @@ import com.tencoding.bank.handler.exception.CustomRestfulException;
  * 예외 발생 시 (Json, Xml)
  * 데이터를 가공해 내려 줄 수 있음
  */
-
+@Order(1)
 @RestControllerAdvice // IoC, Aop 대상
 public class MyRestfulExepcionHandler {
 
