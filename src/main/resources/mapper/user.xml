@@ -25,5 +25,10 @@
 		SELECT * FROM user_tb WHERE id = #{id}
 	</select>
 
-
+	<select id="findByUsernameAndPassword"
+	resultType="com.tencoding.bank.repository.model.User">
+		SELECT * from user_tb
+		WHERE username = #{username} and password = #{password}
+	</select>
+	
 </mapper>
